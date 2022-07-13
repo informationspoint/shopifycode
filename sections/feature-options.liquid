@@ -1,0 +1,61 @@
+<div class="container secgaps">
+    <div class="row justify-content-center" style="height:340px;">
+        {% for block in section.blocks  %}
+            <div class="col-lg-3 featurecol">
+                <div class="featurecold d-flex flex-column" style="background:url('{{block.settings.image | img_url: 'master'}}');">
+                <p class="m-auto">{{block.settings.text}}</p>
+                <a href="{{block.settings.button_url}}">{{block.settings.button_label}}</a>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Feature Option",
+  "tag": "section",
+  "class": "feature option",
+  "max_blocks": 3,
+  "settings": [
+        {
+        "type": "text",
+        "id": "title",
+        "label": "Feature"
+        }
+    ],
+    "blocks":[
+        {
+        "name":"Feature",
+        "type":"feature",
+        "settings": [
+            {
+                "type": "text",
+                "id": "text",
+                "label": "Text"
+              },
+              {
+                "type": "text",
+                "id": "button_label",
+                "label": "Button Label"
+              },
+              {
+                "type": "url",
+                "id": "button_url",
+                "label": "Button Link"
+              },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            }
+        ]
+    }
+    ],
+  "presets": [
+    {
+      "name": "Feature Option"
+    }
+  ]
+}
+{% endschema %}

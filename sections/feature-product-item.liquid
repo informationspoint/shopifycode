@@ -1,0 +1,53 @@
+<div class="container secgaps">
+    <div class="row gx-5">
+        <h2 class="text-center sp_title">{{section.settings.title}}</h2>
+        <span class="text-center sp_description">{{section.settings.description}}</span>
+        {%- for product in section.settings.collection.products limit:6 -%}
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="card">
+                    <img class="card-img-top p-3" src="{{product.featured_image |img_url: '2000x'}}" alt="..some team image">
+                    <div class="card-body">
+                        <p class="product_price"> $ {{product.price}}</p>
+                        <h2 class="card-title product_title"> {{product.title}}</h2>
+                            <ul class="product_tags">
+                                {% for tag in product.tags %}
+                                    <li>
+                                        <a href="/collection/all/{{tag | handleize}}">{{tag}}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        {%- endfor-%}
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Feature Post Item",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description"
+      },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+      ],
+  "presets": [
+    {
+      "name": "Feature Post Item"
+    }
+  ]
+}
+{% endschema %}

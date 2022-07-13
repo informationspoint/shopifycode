@@ -1,0 +1,158 @@
+.header__menu-item span{
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+    margin: auto 12px;
+}
+.header__active-menu-item {
+    font-weight: 700 !important;
+}
+ul.list-menu--inline{
+    margin-left: 6em;
+}
+.secgaps{
+    margin: 80px auto;
+}
+.hb{
+    background: #D8BE8C;
+}
+.header_title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 77px;
+    line-height: 103px;
+    color: #000000;
+}
+.header_text{
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    color: #000000;
+}
+.header_btn{
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    border: 4px solid #FFFFFF;
+    background: transparent;
+    padding: 4px 15px;
+    color: white;
+}
+.header_btn a{
+    color: white;
+    text-decoration: none;
+}
+.header_btn:hover{
+    border: 4px solid black;
+}
+.featurecol{
+    background: #F3F3F3;
+    margin: 15px;
+    text-align: center;
+}
+.featurecold{
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+.featurecold a:hover{
+    color: blue;
+}
+.featurecol p{
+    font-family: 'Domine';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+}
+.featurecol a{
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    text-decoration: none;
+    color: #000000;
+}
+.sp_title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 67px;
+    color: #000000;
+}
+.sp_description{
+    font-family: 'Domine';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #929292;
+}
+.product_price{
+    float: right;
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+    color: #4CA36F;
+}
+.product_title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+.product_tags{
+    list-style-type: none;
+    padding: 0;
+}
+.product_tags li{
+    float: left;
+}
+.product_tags a{
+    background: #D8BE8C;
+    border-radius: 4px;
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 4px;
+    margin: 0 3px;
+    text-decoration: none;
+}
+.footer{
+    background: #393939;
+    margin-top:50px;
+}
+.footer p{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    padding: 15px;
+    margin: 0;
+    color: #FFFFFF;
+}

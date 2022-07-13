@@ -1,0 +1,52 @@
+<div class="container-fluid hb">
+    <div class="row" style="min-height:500px;">
+        <div class="col-lg-5 col-md-5 col-sm-12" style="position:relative;">
+            <img src="{{section.settings.image | image_url}}" style="position:absolute;bottom:0px;right:56px;">
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-12 m-auto">
+            <h2 class="header_title">{{section.settings.title}}</h2>
+            <h3 class="header_text">{{section.settings.text}}</h3>
+            <button type="button" class="header_btn"><a href="{{section.settings.button_url}}">{{section.settings.button_label}}</a></button>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "headerbanner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+        "type": "text",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+      ],
+  "presets": [
+    {
+      "name": "Header Banner"
+    }
+  ]
+}
+{% endschema %}
